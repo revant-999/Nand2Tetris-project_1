@@ -42,6 +42,4 @@ Higher-level gates (Mux, DMux, Multiway) are built using combinations of these.
 
 ## ✅ Testing
 All gates were tested using the **Hardware Simulator** provided in Nand2Tetris.  
-Example:  
-```bash
-HardwareSimulator.sh tests/And.tst
+
