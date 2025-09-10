@@ -1,45 +1,45 @@
-# Nand2Tetris Project 1: Boolean Logic
+🖥️ Nand2Tetris
 
-This project implements a complete set of elementary logic gates, 16-bit variants, and multi-way variants using only **NAND gates** as the primitive.  
-It is the foundation for building a full computer from first principles (Nand2Tetris course).  
+This repository documents my journey of building a complete computer system from the ground up, following the Nand2Tetris course. Starting with nothing but the NAND gate, each layer of hardware and software is constructed step by step until a fully working computer and operating system emerge.
 
----
+🔧 Implemented Layers
 
-## 🔧 Implemented Components
-### Elementary Gates
-- Not, And, Or, Xor  
-- Mux, DMux  
+Boolean Logic
 
-### 16-bit Variants
-- Not16, And16, Or16  
-- Mux16  
+Arithmetic Circuits
 
-### Multi-way Variants
-- Or8Way  
-- Mux4Way16, Mux8Way16  
-- DMux4Way, DMux8Way  
+Sequential Logic
 
----
+Memory Architecture
 
-## 🧠 Key Idea
-All gates are derived from the **NAND gate**:
-- `NOT(A) = NAND(A, A)`  
-- `AND(A, B) = NOT(NAND(A, B))`  
-- `OR(A, B) = NAND(NOT(A), NOT(B))`  
-- `XOR(A, B) = OR(AND(A, NOT(B)), AND(NOT(A), B))`  
+Machine Language
 
-Higher-level gates (Mux, DMux, Multiway) are built using combinations of these.  
+Assembler & Virtual Machine
 
----
+High-Level Language & OS
 
-## 📂 File Organization
-- `ElementaryGates/` → Basic gates  
-- `Variants16/` → 16-bit wide gates  
-- `MultiwayVariants/` → Multi-input/output gates  
-- `tests/` → Pre-written test scripts to validate correctness  
+🧠 Key Idea
 
----
+The computer is built using a bottom-up approach:
 
-## ✅ Testing
-All gates were tested using the **Hardware Simulator** provided in Nand2Tetris.  
+Start from NAND → Logic Gates
 
+Build Arithmetic + Memory
+
+Create a CPU + Machine Language
+
+End with a high-level language & OS
+
+📂 File Organization
+
+Project1/ → Boolean Logic
+
+Project2/ → Arithmetic
+
+Project3/ → Sequential Logic
+
+(and so on...)
+
+✅ Testing
+
+All hardware and software modules are tested using the Nand2Tetris tools (Hardware Simulator, CPU Emulator, VM Emulator).
